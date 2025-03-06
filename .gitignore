@@ -1,0 +1,5 @@
+# Node artifacts
+/node_modules
+/.venv
+/.env
+/__pycache__
