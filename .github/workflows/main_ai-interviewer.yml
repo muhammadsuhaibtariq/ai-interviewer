@@ -26,12 +26,12 @@ jobs:
 
       - name: Create and start backend virtual environment
         run: |
-          python -m antenv .venv/interview-generator-frontend
+          python -m venv .venv/interview-generator-frontend
           source .venv/interview-generator-frontend/bin/activate
       
       - name: Create and start frontendvirtual environment
         run: |
-          python -m antenv .venv/interview-generator-frontend
+          python -m venv .venv/interview-generator-frontend
           source .venv/interview-generator-frontend/bin/activate
       
       - name: Install backend dependencies
