@@ -30,7 +30,8 @@ app = FastAPI(
 
 # Define the list of allowed origins for CORS
 origins = [
-    "http://localhost:8000",   # Localhost development server
+    "http://localhost:8000", 
+    "frontend-ai-interviewer-c9eycfc7hqgkdkhc.canadacentral-01.azurewebsites.net"  # Localhost development server
     # Add more origins as needed
 ]
 
