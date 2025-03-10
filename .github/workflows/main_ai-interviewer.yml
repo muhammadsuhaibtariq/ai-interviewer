@@ -34,6 +34,9 @@ jobs:
       - name: Install frontend dependencies
         run: pip install -r frontend/requirements.txt
         
+
+      - name: Make start script executable
+        run: chmod +x start.sh
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
