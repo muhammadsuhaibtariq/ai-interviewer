@@ -1,0 +1,5 @@
+# requirements.txt (root level)
+-r frontend/requirements.txt
+-r backend/requirements.txt
+gunicorn
+uvicorn
