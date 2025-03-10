@@ -36,7 +36,10 @@ jobs:
         
 
       - name: Make start script executable
-        run: chmod +x start.sh
+        run: |
+          pwd
+          ls -ltrh
+          chmod +x ./start.sh
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
