@@ -8,8 +8,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'backend/**'
   workflow_dispatch:
 
 jobs:
@@ -32,14 +30,12 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r backend/requirements.txt
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
-      - name: Zip artifact for backend deployment
-        run: |
-          cd backend
-          zip -r ../release.zip .
+      - name: Zip artifact for deployment
+        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
@@ -72,4 +68,4 @@ jobs:
         with:
           app-name: 'backend-ai-interviewer'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_839F63C1D2EE448080A6C8929D481F1B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_311D20DF29FE4A738E7F0DF938A6EDA5 }}
