@@ -1,6 +1,0 @@
-# requirements.txt (root level)
--r frontend/requirements.txt
--r backend/requirements.txt
-gunicorn
-uvicorn
-importlib-metadata==8.6.1
