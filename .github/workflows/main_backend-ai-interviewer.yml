@@ -72,4 +72,4 @@ jobs:
         with:
           app-name: 'backend-ai-interviewer'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_311D20DF29FE4A738E7F0DF938A6EDA5 }}
+         
